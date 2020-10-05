@@ -10,7 +10,7 @@ def driver():
     driver.quit()
 
 
-def test_sample():
+def test_sample(driver):
 
     driver.get("https://example.testproject.io/web/")
 
