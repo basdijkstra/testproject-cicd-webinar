@@ -1,16 +1,17 @@
 import pytest
+from src.testproject.decorator import report_assertion_errors
 
 from src.testproject.sdk.drivers import webdriver
 
 
-@pytest.fixture()
+@pytest.fixture
 def driver():
     driver = webdriver.Chrome()
     yield driver
     driver.quit()
 
 
-def test_sample():
+def test_to_demonstrate_new_features(driver):
 
     driver.get("https://example.testproject.io/web/")
 

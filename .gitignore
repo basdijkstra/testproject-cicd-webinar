@@ -131,3 +131,6 @@ dmypy.json
 
 # Pytest
 pytest.ini
+
+# test results
+results/
