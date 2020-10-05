@@ -12,4 +12,4 @@ def test_sample():
 
     result = driver.find_element_by_css_selector("#greetings").is_displayed()
 
-    assert result is False
+    assert result is True
