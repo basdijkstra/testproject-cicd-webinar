@@ -11,6 +11,7 @@ def driver():
     driver.quit()
 
 
+@report_assertion_errors
 def test_to_demonstrate_new_features(driver):
 
     driver.get("https://example.testproject.io/web/")
@@ -21,4 +22,4 @@ def test_to_demonstrate_new_features(driver):
 
     result = driver.find_element_by_css_selector("#greetings").is_displayed()
 
-    assert result is True
+    assert result is False
